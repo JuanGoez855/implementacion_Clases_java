@@ -42,4 +42,8 @@ public class Product {
             System.out.println("Error: El stock no puede ser negativo.");
         }
     }
-}
+    public String toString() {
+    return "Producto [ID: " + id + ", Nombre: " + name + ", Precio: " + price + ", Stock: " + stock + "]";
+    }
+    }
+
