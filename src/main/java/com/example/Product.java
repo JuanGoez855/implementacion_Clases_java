@@ -29,6 +29,17 @@ public class Product {
         this.name = name;
     }
     public void setPrice(double price) {
-        
+        if (price >= 0) {
+            this.price = price;
+        } else {
+            System.out.println("El precio no puede ser negativo.");
+        }
+    }
+    public void setStock(int stock) {
+        if (stock >= 0 ) {
+            this.stock = stock;
+        } else {
+            System.out.println("Error: El stock no puede ser negativo.");
+        }
     }
 }
